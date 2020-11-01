@@ -40,3 +40,14 @@
 - Thin Client is the client which holds just the user interface of the application. It has no business logic of any sort. For every action, the client sends a request to the backend server. Just like in a three-tier application.
 - On the contrary, the thick client holds all or some part of the business logic. These are the two-tier applications. We’ve already gone through this if you remember.
 
+9. Server
+- The primary task of a web server is to receive the requests from the client & provide the response after executing the business logic based on the request parameters received from the client.
+- Every service, running online, needs a server to run. Servers running web applications are commonly known as the application servers.
+- Besides the application servers, there are other kinds of servers too with specific tasks assigned to them such as the:	
+    Proxy server
+    Mail server
+    File server
+    Virtual server
+- All the components of a web application need a server to run. Be it a database, a message queue, a cache or any other component. In modern application development, even the user interface is hosted separately on a dedicated server.    
+
+
