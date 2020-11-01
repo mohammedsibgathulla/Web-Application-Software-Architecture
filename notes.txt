@@ -35,3 +35,8 @@
 - The client holds our user interface. The user interface is the presentation part of the application. It’s written in Html, JavaScript, CSS and is responsible for the look & feel of the application.
 - The user interface runs on the client. The client can be a mobile app, a desktop or a tablet like an iPad. It can also be a web-based console, running commands to interact with the backend server.
 
+8. Types of Client
+- Thin Client & Thick Client
+- Thin Client is the client which holds just the user interface of the application. It has no business logic of any sort. For every action, the client sends a request to the backend server. Just like in a three-tier application.
+- On the contrary, the thick client holds all or some part of the business logic. These are the two-tier applications. We’ve already gone through this if you remember.
+
