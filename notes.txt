@@ -23,3 +23,6 @@
 - Separation of concerns kind of means the same thing, be concerned about your work only & stop worrying about the rest of the stuff. Keeping the components separate makes them reusable. Different services can use the same database, the messaging server or any component as long as they are not tightly coupled with each other.
 - Note: Don’t confuse tiers with the layers of the application. Some prefer to use them interchangeably. But in the industry layers of an application typically means the user interface layer, business layer, service layer, or the data access layer.
 
+- What Is Web Architecture?
+- Web architecture involves multiple components like database, message queue, cache, user interface & all running in conjunction with each other to form an online service.
+
