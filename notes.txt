@@ -5,6 +5,21 @@
 2. Two Tier Application 
 - A Two-tier application involves a client and a server. The client would contain the user interface & the business logic in one machine. And the backend server would be the database running on a different machine. The database server is hosted by the business & has control over it.
 
-3. Three Tier Applications
+3. Three Tier applications
 - In a three-tier application, the user interface, application logic & the database all lie on different machines & thus have different tiers. They are physically separated.
+
+4. N Tier Applications
+- An N-tier application is an application which has more than three components involved. For example 
+  - Cache
+  - Message queues for asynchronous behaviour
+  - Load balancers
+  - Search servers for searching through massive amounts of data
+  - Components involved in processing massive amounts of data
+  - Components running heterogeneous tech commonly known as web services etc.
+- Note: There is another name for n-tier apps, the “distributed applications”. But, I think it’s not safe to use the word “distributed” yet, as the term distributed brings along a lot of complex stuff with it. It would rather confuse us than help. Though I will discuss the distributed architecture in this course, for now, we will just stick with the term N-tier applications.
+- Why the need for so many tiers? 
+- Two software design principles that are key to explaining this are the Single Responsibility Principle & the Separation of Concerns.
+- Single Responsibility Principle simply means giving one, just one responsibility to a component & letting it execute it with perfection. Be it saving data, running the application logic or ensuring the delivery of the messages throughout the system.
+- Separation of concerns kind of means the same thing, be concerned about your work only & stop worrying about the rest of the stuff. Keeping the components separate makes them reusable. Different services can use the same database, the messaging server or any component as long as they are not tightly coupled with each other.
+- Note: Don’t confuse tiers with the layers of the application. Some prefer to use them interchangeably. But in the industry layers of an application typically means the user interface layer, business layer, service layer, or the data access layer.
 
