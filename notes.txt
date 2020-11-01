@@ -89,6 +89,27 @@
 - It would be apt to establish a persistent connection between the client and the server from a user experience standpoint.
 - Long opened connections can be implemented by multiple techniques such as Ajax Long Polling, Web Sockets, Server-Sent Events etc.
 
+14. HTTP Push-Based Technologies
+- The below are the HTTP Push-Based technologies  
+    Web Sockets
+    AJAX – Long Polling
+    HTML5 Event Source API & Server Sent Events
+    Streaming Over HTTP
+- A Web Socket connection is ideally preferred when we need a persistent bi-directional low latency data flow from the client to server & back.
+- Typical use-cases of these are messaging, chat applications, real-time social streams & browser-based massive multiplayer games which have quite a number of read writes in comparison to a regular web app.
+- With Web Sockets, we can keep the client-server connection open as long as we want. Have bi-directional data? Go ahead with Web Sockets. One more thing, Web Sockets tech doesn’t work over HTTP. It runs over TCP. The server & the client should both support web sockets or else it won’t work.
+- Long Polling lies somewhere between Ajax & Web Sockets. In this technique instead of immediately returning the response, the server holds the response until it finds an update to be sent to the client. The connection in long polling stays open a bit longer in comparison to polling. The server doesn’t return an empty response. If the connection breaks, the client has to re-establish the connection to the server. The upside of using this technique is that there are quite a smaller number of requests sent from the client to the server, in comparison to the regular polling mechanism. This reduces a lot of network bandwidth consumption. Long polling can be used in simple asynchronous data fetch use cases when you do not want to poll the server every now & then.
+- The Server-Sent Events implementation takes a bit of a different approach. Instead of the client polling for data, the server automatically pushes the data to the client whenever the updates are available. The incoming messages from the server are treated as Events. Via this approach, the servers can initiate data transmission towards the client once the client has established the connection with an initial request.
+- This helps in getting rid of a huge number of blank request-response cycles cutting down the bandwidth consumption by notches.
+- To implement server-sent events, the backend language should support the technology & on the UI HTML5 Event source API is used to receive the data in-coming from the backend.
+- An important thing to note here is that once the client establishes a connection with the server, the data flow is in one direction only, that is from the server to the client.
+- SSE is ideal for scenarios such as a real-time feed like that of Twitter, displaying stock quotes on the UI, real-time notifications etc.
+- Streaming Over HTTP is ideal for cases where we need to stream large data over HTTP by breaking it into smaller chunks. This is possible with HTML5 & a JavaScript Stream API.
+- The technique is primarily used for streaming multimedia content, like large images, videos etc, over HTTP. Due to this, we can watch a partially downloaded video as it continues to download, by playing the downloaded chunks on the client. This helps them figure when the stream begins & ends over an HTTP request-response model.
+
+
+
+
 
 
 
