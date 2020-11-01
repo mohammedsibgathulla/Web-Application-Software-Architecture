@@ -66,7 +66,13 @@
     HTML5 Event Source
     Message Queues
     Streaming over HTTP
-    
+
+12. HTTP Pull - Polling with Ajax
+- There are two ways of pulling/fetching data from the server. The first is sending an HTTP GET request to the server manually by triggering an event, like by clicking a button or any other element on the web page.
+- The other is fetching data dynamically at regular intervals by using AJAX without any human intervention. AJAX is commonly used with the Jquery framework to implement the asynchronous behaviour on the UI. 
+- This dynamic technique of requesting information from the server after regular intervals is known as Polling.
+
+
 
 
 
