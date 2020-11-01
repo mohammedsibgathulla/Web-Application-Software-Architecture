@@ -23,6 +23,11 @@
 - Separation of concerns kind of means the same thing, be concerned about your work only & stop worrying about the rest of the stuff. Keeping the components separate makes them reusable. Different services can use the same database, the messaging server or any component as long as they are not tightly coupled with each other.
 - Note: Don’t confuse tiers with the layers of the application. Some prefer to use them interchangeably. But in the industry layers of an application typically means the user interface layer, business layer, service layer, or the data access layer.
 
-- What Is Web Architecture?
+5. What Is Web Architecture?
 - Web architecture involves multiple components like database, message queue, cache, user interface & all running in conjunction with each other to form an online service.
+
+6. Client Server Architecture
+- The architecture works on a request-response model. The client sends the request to the server for information & the server responds with it.
+- A very small percent of the business websites and applications use the peer to peer architecture, which is different from the client-server.
+- Every website you browse, be it a Wordpress blog or a web application like Facebook, Twitter or your banking app is built on the client-server architecture.
 
