@@ -31,3 +31,7 @@
 - A very small percent of the business websites and applications use the peer to peer architecture, which is different from the client-server.
 - Every website you browse, be it a Wordpress blog or a web application like Facebook, Twitter or your banking app is built on the client-server architecture.
 
+7. Client
+- The client holds our user interface. The user interface is the presentation part of the application. It’s written in Html, JavaScript, CSS and is responsible for the look & feel of the application.
+- The user interface runs on the client. The client can be a mobile app, a desktop or a tablet like an iPad. It can also be a web-based console, running commands to interact with the backend server.
+
