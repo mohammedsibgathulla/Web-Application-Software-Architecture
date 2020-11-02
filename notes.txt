@@ -121,6 +121,19 @@
 - However, the modern websites are highly dependent on Ajax. In such websites, content for a particular module or a section of a page has to be fetched & rendered on the fly. Therefore, server-side rendering doesn’t help much. For every Ajax-request, instead of sending just the required content to the client, the approach generates the entire page on the server. This process consumes unnecessary bandwidth & also fails to provide a smooth user experience.
 - A big downside to this is once the number of concurrent users on the website rises, it puts an unnecessary load on the server.
 - Client-side rendering works best for modern dynamic Ajax-based websites. Though we can leverage a hybrid approach, to get the most out of both techniques. We can use server-side rendering for the home page & for the other static content on our website & use client-side rendering for the dynamic pages.
+
+16. What is Scalability?
+- Scalability means the ability of the application to handle & withstand increased workload without sacrificing the latency.
+- Latency is the amount of time a system takes to respond to a user request. Let’s say you send a request to an app to fetch an image & the system takes 2 seconds to respond to your request. The latency of the system is 2 seconds.
+- Minimum latency is what efficient software systems strive for. No matter how much the traffic load on a system builds up, the latency should not go up. This is what scalability is.
+- If the latency remains the same, we can say yeah, the application scaled well with the increased load & is highly scalable.
+- Latency is measured as the time difference between the action that the user takes on the website, it can be an event like the click of a button, & the system response in reaction to that event.
+- This latency is generally divided into two parts:
+    Network Latency
+    Application Latency
+- Network Latency is the amount of time that the network takes for sending a data packet from point A to point B. The network should be efficient enough to handle the increased traffic load on the website. To cut down the network latency, businesses use CDN & try to deploy their servers across the globe as close to the end-user as possible.
+- Application Latency is the amount of time the application takes to process a user request. There are more than a few ways to cut down the application latency. The first step is to run stress & load tests on the application & scan for the bottlenecks that slow down the system as a whole. I’ve talked more about it in the upcoming lesson.
+- We can realize the importance of low latency by the fact that Huawei & Hibernia Atlantic in the year 2011 started laying a fibre-optic link cable across the Atlantic Ocean between London & Newyork, that was estimated having a cost of approx. $300M, just to save traders 6 milliseconds of latency.
    
 
 
