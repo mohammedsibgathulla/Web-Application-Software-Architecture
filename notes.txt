@@ -134,6 +134,13 @@
 - Network Latency is the amount of time that the network takes for sending a data packet from point A to point B. The network should be efficient enough to handle the increased traffic load on the website. To cut down the network latency, businesses use CDN & try to deploy their servers across the globe as close to the end-user as possible.
 - Application Latency is the amount of time the application takes to process a user request. There are more than a few ways to cut down the application latency. The first step is to run stress & load tests on the application & scan for the bottlenecks that slow down the system as a whole. I’ve talked more about it in the upcoming lesson.
 - We can realize the importance of low latency by the fact that Huawei & Hibernia Atlantic in the year 2011 started laying a fibre-optic link cable across the Atlantic Ocean between London & Newyork, that was estimated having a cost of approx. $300M, just to save traders 6 milliseconds of latency.
+
+17. Types of Scalability
+- Vertical Scaling
+- Horizontal Scaling
+- Cloud Elasiticity: The biggest reason why cloud computing got so popular in the industry is the ability to scale up & down dynamically. The ability to use & pay only for the resources required by the website became a trend for obvious reasons.
+- Having multiple server nodes on the backend also helps with the website staying alive online all the time even if a few server nodes crash. This is known as High Availability.
+
    
 
 
