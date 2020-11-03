@@ -141,6 +141,15 @@
 - Cloud Elasiticity: The biggest reason why cloud computing got so popular in the industry is the ability to scale up & down dynamically. The ability to use & pay only for the resources required by the website became a trend for obvious reasons.
 - Having multiple server nodes on the backend also helps with the website staying alive online all the time even if a few server nodes crash. This is known as High Availability.
 
+18. Which Scalability Approach Is Right For Your App?
+- Vertical scaling for obvious reasons is simpler in comparison to scaling horizontally as we do not have to touch the code or make any complex distributed system configurations. It takes much less administrative, monitoring, management efforts as opposed to when managing a distributed environment.
+- A major downside of vertical scaling is availability risk. The servers are powerful but few in number, there is always a risk of them going down & the entire website going offline which doesn’t happen when the system is scaled horizontally. It becomes more highly available.
+- If you need to run the code in a distributed environment, it needs to be stateless. There should be no state in the code.
+- No static instances in the class. Static instances hold application data & if a particular server goes down all the static data/state is lost. The app is left in an inconsistent state.
+- Rather, use a persistent memory like a key-value store to hold the data & to remove all the state/static variable from the class. This is why functional programming got so popular with distributed systems. The functions don’t retain any state.
+- Development teams today are adopting a distributed micro-services architecture right from the start & the workloads are meant to be deployed on the cloud. So, inherently the workloads are horizontally scaled out on the fly.
+- 
+
    
 
 
