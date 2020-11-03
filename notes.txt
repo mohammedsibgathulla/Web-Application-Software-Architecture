@@ -194,6 +194,10 @@
 - Several load & stress tests are run on the application. Tools like JMeter are pretty popular for running concurrent user test on the application if you are working on a Java ecosystem. There are a lot of cloud-based testing tools available that help us simulate tests scenarios just with a few mouse clicks.
 - In the industry tech like Cadvisor, Prometheus and Grafana are pretty popular for tracking the system via web-based dashboards.
 
+21. What Is High Availability?
+- High availability also known as HA is the ability of the system to stay online despite having failures at the infrastructural level in real-time. High availability ensures the uptime of the service much more than the normal time. It improves the reliability of the system, ensures minimum downtime. 
+- To meet the high availability requirements systems are designed to be fault-tolerant, their components are made redundant.
+
 
 
 
