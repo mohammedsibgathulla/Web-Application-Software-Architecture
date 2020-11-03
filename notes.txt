@@ -175,6 +175,26 @@
 - Writing tightly coupled code.
 - Not paying attention to the Big-O complexity while writing the code. Be ready to do a lot of firefighting in production.
 
+20. How To Improve & Test the Scalability Of Our Application?
+    Tuning The Performance Of The Application – Enabling It To Scale Better
+        Profiling
+        Caching
+        CDN (Content Delivery Network)
+        Data Compression
+        Avoid Unnecessary Client Server Requests
+    Testing the Scalability Of Our Application
+- The application’s performance is directly proportional to scalability. If an application is not performant it will certainly not scale well.
+- Run application profiler, code profiler. See which processes are taking too long, eating up too much resources. Find out the bottlenecks. Get rid of them. Profiling is the dynamic analysis of our code. It helps us measure the space and the time complexity of our code & enables us to figure out issues like concurrency errors, memory errors & robustness & safety of the program.
+- Cache wisely. Cache everywhere. Cache all the static content. Hit the database only when it is really required. Try to serve all the read requests from the cache. Use a write-through cache.
+- Use a CDN. Using a CDN further reduces the latency of the application due to the proximity of the data from the requesting user.
+- Compress data. Use apt compression algorithms to compress data. Store data in the compressed form. As compressed data consumes less bandwidth, consequently, the download speed of the data on the client will be faster.
+- Avoid unnecessary round trips between the client & server. Try to club multiple requests into one.
+- During the scalability testing, different system parameters are taken into account such as the CPU usage, network bandwidth consumption, throughput, the number of requests processed within a stipulated time, latency, memory usage of the program, end-user experience when the system is under heavy load etc.
+- In this testing phase, simulated traffic is routed to the system, to study how the system behaves under the heavy load, how the application scales under the heavy load. Contingencies are planned for unforeseen situations.
+- Several load & stress tests are run on the application. Tools like JMeter are pretty popular for running concurrent user test on the application if you are working on a Java ecosystem. There are a lot of cloud-based testing tools available that help us simulate tests scenarios just with a few mouse clicks.
+- In the industry tech like Cadvisor, Prometheus and Grafana are pretty popular for tracking the system via web-based dashboards.
+
+
 
 
 
