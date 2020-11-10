@@ -215,6 +215,25 @@
 - A very basic example of a system being fault-tolerant is a social networking application. In the case of backend node failures, a few services of the app such as image upload, post likes etc. may stop working. But the application as a whole will still be up. This approach is also technically known as Fail Soft.
 - To achieve high availability at the application level, the entire massive service is architecturally broken down into smaller loosely coupled services called the micro-services.
 
+24. Redundancy
+
+    Redundancy – Active-Passive HA Mode
+    Getting Rid Of Single Points Of Failure
+    Monitoring & Automation
+
+- Redundancy is duplicating the components or instances & keeping them on standby to take over in case the active instances go down. It’s the fail-safe, backup mechanism.
+- In the diagram, you can see the instances active & on standby. The standby instances take over in case any of the active instances goes down.
+- This approach is also known as Active-Passive HA mode. An initial set of nodes are active & a set of redundant nodes are passive, on standby. Active nodes get replaced by passive nodes, in case of failures.
+- There are systems like GPS, aircrafts, communication satellites which have zero downtime. The availability of these systems is ensured by making the components redundant.
+- Distributed systems got so popular solely due to the reason that with them, we could get rid of the single points of failure present in a monolithic architecture.
+- A large number of distributed nodes work in conjunction with each other to achieve a single synchronous application state.
+- When so many redundant nodes are deployed, there are no single points of failure in the system. In case a node goes down redundant nodes take its place. Thus, the system as a whole remains unimpacted.
+- Single points of failure at the application level mean bottlenecks. We should detect bottlenecks in performance testing & get rid of them as soon as we can.
+- Systems should be well monitored in real-time to detect any bottlenecks or single point of failures. Automation enables the instances to self-recover without any human intervention. It gives the instances the power of self-healing.
+- Also, the systems become intelligent enough to add or remove instances on the fly as per the requirements.
+- Since the most common cause of failures is human error, automation helps cut down failures to a big extent.
+
+
 
 
 
