@@ -198,6 +198,18 @@
 - High availability also known as HA is the ability of the system to stay online despite having failures at the infrastructural level in real-time. High availability ensures the uptime of the service much more than the normal time. It improves the reliability of the system, ensures minimum downtime. 
 - To meet the high availability requirements systems are designed to be fault-tolerant, their components are made redundant.
 
+22. Reasons For System Failures
+    Software Crashes
+    Hardware Failures
+    Human Errors
+    Planned Downtime
+- Software running on cloud nodes crash unpredictably, along with it they take down the entire node.     
+- Overloaded CPU, RAM, hard disk failures, nodes going down. Network outages.
+- Google made a tiny network configuration error & it took down almost half of the internet in Japan.
+- Besides the unplanned crashes, there are planned down times which involve routine maintenance operations, patching of software, hardware upgrades etc.
+
+
+
 
 
 
