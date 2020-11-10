@@ -208,6 +208,14 @@
 - Google made a tiny network configuration error & it took down almost half of the internet in Japan.
 - Besides the unplanned crashes, there are planned down times which involve routine maintenance operations, patching of software, hardware upgrades etc.
 
+23. Achieving High Availability - Fault Tolerance
+- Fault tolerance is the ability of the system to stay up despite taking hits.
+- A fault-tolerant system is equipped to handle faults. Being fault-tolerant is an essential element in designing life-critical systems.
+- A few of the instances/nodes, out of several, running the service go offline & bounce back all the time. In case of these internal failures, the system could work at a reduced level but it will not go down entirely.
+- A very basic example of a system being fault-tolerant is a social networking application. In the case of backend node failures, a few services of the app such as image upload, post likes etc. may stop working. But the application as a whole will still be up. This approach is also technically known as Fail Soft.
+- To achieve high availability at the application level, the entire massive service is architecturally broken down into smaller loosely coupled services called the micro-services.
+
+
 
 
 
