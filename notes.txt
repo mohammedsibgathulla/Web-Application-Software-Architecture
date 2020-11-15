@@ -244,6 +244,13 @@
 - This avoids the single point of failure thing in context to a data centre. Also, the latency is reduced by quite an extent due to the proximity of data to the user.
 - Businesses often use multi-cloud platforms to deploy their workloads which ensures further availability. If things go south with one cloud provider, they have another to fail back over.
 
+26. High Availability Clustering
+- A High Availability cluster also known as the Fail-Over cluster contains a set of nodes running in conjunction with each other that ensures high availability of the service.
+- The nodes in the cluster are connected by a private network called the Heartbeat network that continuously monitors the health and the status of each node in the cluster.
+- A single state across all the nodes in a cluster is achieved with the help of a shared distributed memory & a distributed co-ordination service like the Zookeeper.
+- To ensure the availability, HA clusters use several techniques such as Disk mirroring/RAID Redundant Array Of Independent Disks, redundant network connections, redundant electrical power etc. The network connections are made redundant so if the primary network goes down the backup network takes over.
+- Multiple HA clusters run together in one geographical zone ensuring minimum downtime & continual service.
+
 
 
 
