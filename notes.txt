@@ -233,6 +233,19 @@
 - Also, the systems become intelligent enough to add or remove instances on the fly as per the requirements.
 - Since the most common cause of failures is human error, automation helps cut down failures to a big extent.
 
+25. Replication
+
+	Replication – Active-Active HA Mode
+	Geographical Distribution of Workload
+
+- Replication means having a number of similar nodes running the workload together. There are no standby or passive instances. When a single or a few nodes go down, the remaining nodes bear the load of the service. Think of this as load balancing.	
+- This approach is also known as the Active-Active High Availability mode. In this approach, all the components of the system are active at any point in time.
+- As a contingency for natural disasters, data centre regional power outages & other big-scale failures, workloads are spread across different data centres across the world in different geographical zones.
+- This avoids the single point of failure thing in context to a data centre. Also, the latency is reduced by quite an extent due to the proximity of data to the user.
+- Businesses often use multi-cloud platforms to deploy their workloads which ensures further availability. If things go south with one cloud provider, they have another to fail back over.
+
+
+
 
 
 
