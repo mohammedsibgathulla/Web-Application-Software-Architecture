@@ -352,6 +352,19 @@ There are primarily three modes of load balancing -
 - Generally, monolithic applications are not cloud-ready as they hold state in the static variables. An application to be cloud-native, to work smoothly & to be consistent on the cloud has to be distributed and stateless.
 - Monolithic applications fit best for use cases where the requirements are pretty simple, the app is expected to handle a limited amount of traffic. One example of this is an internal tax calculation app of an organization or a similar open public tool.
 
+32. What Is A Microservice Architecture?
+- In a microservices architecture, different features/tasks are split into separate respective modules/codebases which work in conjunction with each other forming a large service as a whole.
+- This particular architecture facilitates easier & cleaner app maintenance, feature development, testing & deployment in comparison to a monolithic architecture.
+- Microservices architecture is inherently designed to scale. Every service ideally has a separate database, there are no single points of failure & system bottlenecks.
+- Since microservices is a loosely coupled architecture, there is no single point of failure. Even if a few of the services go down, the application as a whole is still up.
+- Every component interacts with each other via a REST API Gateway interface. The components can leverage the polyglot persistence architecture & other heterogeneous technologies together like Java, Python, Ruby, NodeJS etc.
+- Polyglot persistence is using multiple databases types like SQL, NoSQL together in an architecture.
+- The deployments can be independent and continuous. We can have dedicated teams for every microservice, it can be scaled independently without impacting other services.
+- Microservices is a distributed environment, where there are so many nodes running together. Managing & monitoring them gets complex.
+- We need to setup additional components to manage microservices such as a node manager like Apache Zookeeper, a distributed tracing service for monitoring the nodes etc.
+- Strong consistency is hard to guarantee in a distributed environment. Things are Eventually consistent across the nodes. And this limitation is due to the distributed design.
+
+
 
 
 
