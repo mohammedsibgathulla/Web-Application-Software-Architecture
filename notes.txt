@@ -364,6 +364,18 @@ There are primarily three modes of load balancing -
 - We need to setup additional components to manage microservices such as a node manager like Apache Zookeeper, a distributed tracing service for monitoring the nodes etc.
 - Strong consistency is hard to guarantee in a distributed environment. Things are Eventually consistent across the nodes. And this limitation is due to the distributed design.
 
+33. Monolith & Microservices – Understanding The Trade-Offs 
+
+    Fault Isolation
+    Development Team Autonomy
+    Segment – From Monolith To Microservices And Back Again To Monolith
+- When we have a microservices architecture in place it’s easy for us to isolate faults and debug them. Even if the service goes down due to the fault, the other services are up & running. This has a minimal impact on the system.
+- Segment is a customer data platform that originally started with a monolith and then later split it into microservices. As their business gained traction, they again decided to revert to the monolith architecture.    
+- Segment integrates data from many different data providers into their system. As the business gained traction, they integrated more data providers into their system creating a separate microservice for every data provider. The increase in the number of microservices led to an increase in the complexity of their architecture significantly, subsequently taking a toll on their productivity. The defects with regards to microservices started increasing significantly. They had three engineers straight up just dedicated to getting rid of these defects to keep the system online. This operational overhead became resource-intensive & slowed down the organization immensely. To tackle the issue, they made the decision to move back to monolith giving up on fault isolation and other nice things that the microservices architecture brought along. They ended up with an architecture having a single code repository that they called Centrifuge that handled billions of messages per day delivered to multiple APIs.
+
+
+
+
 
 
 
