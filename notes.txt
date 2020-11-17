@@ -373,6 +373,35 @@ There are primarily three modes of load balancing -
 - Segment is a customer data platform that originally started with a monolith and then later split it into microservices. As their business gained traction, they again decided to revert to the monolith architecture.    
 - Segment integrates data from many different data providers into their system. As the business gained traction, they integrated more data providers into their system creating a separate microservice for every data provider. The increase in the number of microservices led to an increase in the complexity of their architecture significantly, subsequently taking a toll on their productivity. The defects with regards to microservices started increasing significantly. They had three engineers straight up just dedicated to getting rid of these defects to keep the system online. This operational overhead became resource-intensive & slowed down the organization immensely. To tackle the issue, they made the decision to move back to monolith giving up on fault isolation and other nice things that the microservices architecture brought along. They ended up with an architecture having a single code repository that they called Centrifuge that handled billions of messages per day delivered to multiple APIs.
 
+34. Introduction To Micro Frontends
+- Micro frontends are separate loosely coupled components of the user interface of an application that are developed applying the principles of microservices on the front end.
+- Writing micro frontends is more of an architectural design decision & a development approach as opposed to it being a technology.
+- Micro frontends offer the same upsides as microservices to the front-end development.
+- Generally, in application development, despite having a microservices architecture on the backend, our front end is a monolith that is developed by a dedicated front-end development team.
+- But with the micro frontends approach, we split our application into vertical slices. Where a single slice goes end to end right from the user interface to the database.
+- Every slice is owned by a dedicated team. The team besides the backend devs also includes the front-end developers who have the onus of developing the user interface component only of that particular service.
+- Every team builds its own user interface component choosing their desired technology and later all these components are integrated together forming the complete user interface of the application. This micro frontend approach averts the need for a dedicated centralized user interface team.
+- Micro frontends approach is pretty popular with e-commerce websites. 
+- When we have full-stack teams owning an entire service end to end, this averts the need for a dedicated front-end team. Since the front end devs now work along with the backend devs in the same team this saves a lot of time that was initially spent in the cross-team coordination that was between the backend microservices and the dedicated front-end teams.
+- Since, the micro frontends are loosely coupled, just like microservices, we can develop them leveraging different technologies. This lets us off the hook of sticking to just one UI technology to build the entire front end of the website.
+- Going forward with the micro frontends approach may sound delightful but it’s only fit for medium to large websites. This approach won’t be that advantageous for simple use cases. Rather it will make things more complex.
+- Using multiple technologies in a project brings along a lot of architectural & maintenance complexities with it. With micro frontends, we also need to write additional logic to club all the components together.
+- We also cannot ignore the compatibility & performance issues when using multiple technologies together. So, there are always trade-offs involved. There is no silver bullet.
+- So, once we have different micro frontends ready for our store, we need to integrate them together to have a functional website. There are two ways we can do this -
+	1. By integrating micro frontends on the client
+	2. By integrating micro frontends on the server
+- This concept is pretty similar to the client side & the server-side rendering, in this micro frontends use case, we need to write additional logic to enable the integration of the UI components.	
+- A very basic naïve way of integrating components on the client is having micro frontends with unique links. We just place the links on the website to enable the user to navigate to a certain micro frontend, like so - 
+- Imagine the checkout microservice is hosted on AWS having the URL - https://www.aws.amazon.com/onlinegamestore/checkout & the payment service hosted on Google Cloud with the URL -https://www.cloud.google.com/onlinegamestore/payment
+- When the micro frontends are integrated via basic links when the user navigates from the checkout page to the payment page, the address in the browser changes from the AWS URL to the Google Cloud URL that is visible to the end-user.
+- Following this basic approach, the micro frontends that need to be integrated within a specific page can be done using Iframes.
+- Well, you would have already realized, this approach is not ideal. This is more like the 90s way of building websites, connecting web pages via direct links & Iframes.
+- A recommended way to integrate components on the client-side is by leveraging a technology called the Web Components & frameworks such as Single SPA
+- When the UI components are integrated on the server, on the user request the complete pre-built page of the website is delivered to the client from the server as opposed to sending individual micro frontends to the client and then having them clubbed there.
+- This cuts down the loading time of the website on the client significantly since the browser does not have to do any sort of heavy lifting.
+- Just like the client-side integration process, we have to write separate logic on the server to integrate the micro frontends that are requested by the user. 
+- Open Components is an open-source micro frontends framework used for integrating micro frontends on the server. Podium is another framework that facilitates easy server-side composition of micro frontends.
+
 
 
 
