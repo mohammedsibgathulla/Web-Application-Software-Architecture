@@ -437,7 +437,34 @@ There are primarily three modes of load balancing -
 - Today, the server nodes even have self-healing capabilities. That’s pretty smooth. The infrastructure is intelligent enough to self-recover from faults.
 - Also, NoSQL databases had to sacrifice Strong consistency, ACID Transactions & much more to scale horizontally over a cluster & across the data centres.
 - The data with NoSQL databases is more Eventually Consistent as opposed to being Strongly Consistent.
-- 
+
+38. Features Of NoSQL Databases
+
+    Pros Of NoSQL Databases
+    Gentle Learning Curve
+    Schemaless
+    Cons Of NoSQL Databases
+    Inconsistency
+    No Support For ACID Transactions
+    Conclusion
+    Popular NoSQL Databases
+- NoSQL databases are also developer-friendly.
+- The learning curve is less than that of relational databases. When working with relational databases a big chunk of our time goes into learning how to design well-normalized tables, setting up relationships, trying to minimize joins and stuff.    
+- There are no strict enforced schemas, work with the data as you want. You can always change stuff, spread things around. Entities have no relationships. Thus, things are flexible & you can do stuff your way.
+- Not always!! This flexibility is good and bad at the same time. Being so flexible, developer-friendly, having no joins and relationships etc. makes it good.
+- But it introduces a risk of entities being inconsistent at the same time. Since an entity is spread throughout the database one has to update the new values of the entity at all places.
+- Failing to do so, makes the entity inconsistent. This is not a problem with relational databases since they keep the data normalized. An entity resides at one place only.
+- Also, NoSQL distributed databases don’t provide ACID transactions. A few that claim to do that, don’t support them globally. They are just limited to a certain entity hierarchy or a small region where they can lock down nodes to update them.
+
+    Note: Transactions in distributed systems come with terms and conditions applied.
+
+- Things are comparatively simpler, as there was no stress of managing joins, relationships, n+1 query issues etc    
+- Just fetch the data with its Key. You can also call it the id of the entity. This is a constant O(1) operation, which makes NoSQL Dbs really fast. NoSQL database is a lot easier than working with relationships.
+- It’s alright if we need to make a few extra calls to the backend to fetch data in separate calls that doesn’t make much of a difference. We can always cache the frequently accessed data to overcome that.
+- Some of the popular NoSQL databases used in the industry are MongoDB, Redis, Neo4J, Cassandra.
+
+
+
 
 
 
