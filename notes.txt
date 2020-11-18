@@ -526,6 +526,14 @@ There are primarily three modes of load balancing -
 - One downside of this approach is increased complexity in making all these different technologies work together.
 - A lot of effort goes into building, managing and monitoring polyglot persistence systems. What if there was something simpler? That would save us the pain of putting together everything ourselves. Well, there is.
 
+42. Multi-Model Databases
+- Until now the databases supported only one data model, it could either be a relational database, a graph database or any other database with a certain specific data model.
+- But with the advent of multi-model databases, we have the ability to use different data models in a single database system.
+- Multi-model databases support multiple data models like Graph, Document-Oriented, Relational etc. as opposed to supporting only one data model.
+- They also avert the need for managing multiple persistence technologies in a single service. They reduce the operational complexity by notches. With multi-model databases, we can leverage different data models via a single API.
+- Some of the popular multi-model databases are Arango DB, Cosmos DB, Orient DB, Couchbase etc.
+- 
+
 
 
 
