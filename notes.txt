@@ -482,6 +482,26 @@ There are primarily three modes of load balancing -
 - NoSQL databases also fit best for data analytics use cases, where we have to deal with an influx of massive amounts of data.
 - There are dedicated databases for use cases like this such as Time-Series databases, Wide-Column, Document Oriented etc.
 
+40. Is NoSQL More Performant than SQL?
+
+    Why Do Popular Tech Stacks Always Pick NoSQL Databases?
+    Real World Case Studies
+    Using Both SQL & NoSQL Database In An Application
+- From a technology benchmarking standpoint, both relational and non-relational databases are equally performant.
+- More than the technology, it’s how we design our systems using the technology that affects the performance.
+- So, don’t get confused with all the hype. Understand your use case and then pick the technology accordingly.
+- But why do the popular tech stacks always pick NoSQL databases? For instance, the MEAN (MongoDB, ExpressJS, AngularJS/ReactJS, NodeJs) stack.
+- Well, most of the applications online have common use cases. And these tech stacks have them covered. There are also commercial reasons behind this.
+- Coming back to the performance, it entirely depends on the application & the database design. If we are using more Joins with SQL. The response will inevitably take more time.
+- If we remove all the relationships and joins, SQL becomes just like NoSQL.
+- Facebook uses MySQL for storing its social graph of millions of users. Though it did have to change the DB engine and make some tweaks but MySQL fits best for its use case.
+
+ Note: A well-designed SQL data store will always be more performant than a not so well-designed NoSQL store.
+- As a matter of fact, all the large-scale online services use a mix of both to implement their systems and achieve the desired behaviour.
+- The term for leveraging the power of multiple databases is called Polyglot Persistence.  
+
+
+
 
 
 
