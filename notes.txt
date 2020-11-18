@@ -415,6 +415,17 @@ There are primarily three modes of load balancing -
 - All this activity is the user state. So next time, when the user logs in, he can continue from where he left off. It would not feel like that one is starting fresh & all the previous activity is lost.
 - Storing user state improves the browsing experience & the conversion rate for the business.
 
+36. Relational Database
+
+	What Is A Relational Database?
+	What Are Relationships?
+	Data Consistency
+	ACID Transactions
+- Ensure saving data in a normalized fashion. In very simple terms, normalized data means a unique entity occurs in only one place/table, in its simplest and atomic form and is not spread throughout the database.	
+- ACID – Atomicity, Consistency, Isolation, Durability.
+
+
+
 
 
 
