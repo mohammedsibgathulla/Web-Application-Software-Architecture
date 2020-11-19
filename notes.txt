@@ -675,6 +675,25 @@ There are primarily three modes of load balancing -
     IBM uses Influx DB to run analytics for real-time cognitive fraud detection
     Spiio uses Influx DB to remotely monitor vertical lining green walls & plant installations.
 
+51. Wide-Column Database
+
+    What Is A Wide Column Database?
+    Popular Wide Column Databases
+    When To Pick a Wide Column Database?
+    Real-Life Implementations
+
+- Wide-column databases belong to the NoSQL family of databases, primarily used to handle massive amounts of data, technically called the Big Data.    
+- Wide-column databases are perfect for analytical use cases. They have a high performance and a scalable architecture.
+- Also, known as column-oriented databases wide-column databases store data in a record with a dynamic number of columns. A record can hold billions of columns.
+- Some of the popular wide column databases are Cassandra, HBase, Google BigTable, Scylla DB etc.
+- If you have a use case where you need to grapple with Big data, to ingest it or to run analytics on it, then a wide-column database is a good fit for this scenario.
+- Wide-column databases are built to manage big data ensuring scalability, performance & high availability at the same time.
+- Some of the real-life implementations of the tech are -
+    Netflix uses Cassandra as the backend database for the streaming service\
+    Adobe uses HBase for processing large amounts of data
+    
+
+
 
 
 
