@@ -653,6 +653,31 @@ There are primarily three modes of load balancing -
     Microsoft uses Redis to handle the traffic spike on its platforms
     Google Cloud uses Memcache to implement caching on their cloud platform
 
+50. Time Series Database
+
+    What Is A Time Series Database?
+    What Is Time Series Data?
+    Why Store Time Series Data?
+    Popular Time Series Databases
+    When To Pick A Time Series Database?
+    Real Life Implementations
+
+- Time-Series databases are optimized for tracking & persisting time series data.
+- It is the data containing data points associated with the occurrence of an event with respect to time. These data points are tracked, monitored and then finally aggregated based on certain business logic.
+- Time-Series data is generally ingested from IoT devices, self-driving vehicles, industry sensors, social networks, stock market financial data etc.
+- Studying data, streaming-in from applications helps us track the behaviour of the system. It helps us study user patterns, anomalies & how things change over time.
+- Time-series data is primarily used for running analytics, deducing conclusions and making future business decisions looking at the results of the analytics. Running analytics also helps the product evolve continually.
+- General databases are not built to handle time-series data. With the advent of IoT, these databases are getting pretty popular and are being adopted by the big guns in the industry.
+- Some of the popular time-series databases used in the industry are Influx DB, Timescale DB, Prometheus etc.
+- If you have a use case where you need to manage data in real-time & continually over a long period of time, then a time-series database is what you need.
+-As we know that the time-series databases are built to deal with data, streaming in real-time. The typical use cases of it are fetching data from IoT devices. Managing data for running analytics & monitoring. Writing an autonomous trading platform which deals with changing stock prices in real-time etc.
+- Here are some of the real-life implementations of the tech -
+    IBM uses Influx DB to run analytics for real-time cognitive fraud detection
+    Spiio uses Influx DB to remotely monitor vertical lining green walls & plant installations.
+
+
+
+
 
     
 
