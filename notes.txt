@@ -572,6 +572,18 @@ There are primarily three modes of load balancing -
 - Nodes, spread around the globe, will take some time to reach a consensus. It’s impossible to have zero-latency unless we transit data faster than or at the speed of time.
 - It’s the speed of time, not the speed of light. Speed of light does not have zero latency, it does take some time to travel from one point to the other.
 
+46. Types of Databases
+- There are quite a number of different types of databases available to the application developers, catering to specific use cases.
+    Document-Oriented database
+    Key-value datastore
+    Wide-column database
+    Relational database
+    Graph database
+    Time-Series database
+    Databases dedicated to mobile apps
+-     
+
+
 
 
 
